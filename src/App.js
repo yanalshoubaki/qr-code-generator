@@ -102,7 +102,7 @@ const App = () => {
     setState((prevState) => ({
       ...prevState,
       cornersDotOptions:
-        target.name == "type1"
+        target.name === "type1"
           ? { type: target.value }
           : { [target.name]: target.value },
     }));
